@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 bootloader = { version = "0.9", features = ["map_physical_memory"] }
+spin = "0.10.0"
 
 [dependencies.lazy_static]
 version = "1.0"
