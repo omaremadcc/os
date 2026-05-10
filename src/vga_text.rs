@@ -27,23 +27,6 @@ enum CharacterColor {
     White,
 }
 
-pub fn write() {
-    println(
-        "Omar EmadoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooEmadoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooEmadooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
-    );
-    println("Omar Emad");
-    println("mohamed");
-    println("khal");
-}
-
-pub fn println(text: &str) {
-    let mut writer = WRITER.lock();
-
-    writer.write_byte(b'\n');
-    for byte in text.bytes() {
-        writer.write_byte(byte);
-    }
-}
 
 const BUFFER_WIDTH: usize = 80;
 const BUFFER_HEIGHT: usize = 25;
